@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link href="ZD.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="banner-container">
+<div class="navbar">
+  <div class="hamburger-icon" onclick="toggleMenu()">
+    <img src="images/hamburger-icon.png" alt="Hamburger Icon">
+  </div>
+  <div class="navbar-menu" id="navbarMenu">
+    <ul>
+      <li><a href="index.html" onclick="toggleMenu()">Home Page</a></li>
+      <li><a href="communityEvents.html" onclick="toggleMenu()">Community Events</a></li>
+      <li><a href="virtualTours.html" onclick="toggleMenu()">Virtual Tours</a></li>
+	  <li><a href="zooDonations.html" onclick="toggleMenu()">Zoo Donations</a></li>
+    </ul>
+  </div>
+</div>
+    <div class="banner">
+		
+    </div>
+    <h1 class="banner-text">Donations<br><span class="smaller-text">for</span><br>Possibly Animals Zoo</h1>
+
+  </div>
+	 <div id="popup" class="popup">
+    <p>Thank you for donating!</p>
+  </div>
+
+	<div class="donation-container">
+    <div class="donation-option">
+      <div class="title">Donation 1</div>
+      <div class="caption">Description of Donation 1</div>
+      <div class="cost">$10</div>
+      <a href="#" class="donate-button" onclick="showPopup()">Donate</a>
+    </div>
+    <div class="donation-option">
+      <div class="title">Donation 2</div>
+      <div class="caption">Description of Donation 2</div>
+      <div class="cost">$20</div>
+      <a href="#" class="donate-button" onclick="showPopup()">Donate</a>
+    </div>
+    <div class="donation-option">
+      <div class="title">Donation 3</div>
+      <div class="caption">Description of Donation 3</div>
+      <div class="cost">$50</div>
+      <a href="#" class="donate-button" onclick="showPopup()">Donate</a>
+    </div>
+    <div class="donation-option">
+      <div class="title">Donation 4</div>
+      <div class="caption">Description of Donation 4</div>
+      <div class="cost">$100</div>
+      <a href="#" class="donate-button"  onclick="showPopup()">Donate</a>
+    </div>
+    <div class="donation-option">
+      <div class="title">Donation 5</div>
+      <div class="caption">Description of Donation 5</div>
+      <div class="cost">$200</div>
+      <a href="#" class="donate-button" onclick="showPopup()">Donate</a>
+    </div>
+    <div class="donation-option">
+      <div class="title">Donation 6</div>
+      <div class="caption">Description of Donation 6</div>
+      <div class="cost">$500</div>
+      <a href="#" class="donate-button" onclick="showPopup()">Donate</a>
+    </div>
+  </div>
+	
+	
+	<script>
+
+		function toggleMenu() {
+  var navbarMenu = document.getElementById("navbarMenu");
+  navbarMenu.classList.toggle("open");
+}
+		
+		 function showPopup() {
+      const popup = document.getElementById('popup');
+      popup.style.display = 'block';
+      setTimeout(function() {
+        popup.style.display = 'none';
+      }, 3000);
+    }
+	</script>
+</body>
+</html>

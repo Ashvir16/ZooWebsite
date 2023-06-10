@@ -1,0 +1,227 @@
+body {
+      background-color: #86C08B;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* CSS for the banner container */
+    .banner-container {
+      position: relative;
+      width: 100%;
+      height: 157px;
+      overflow: hidden;
+    }
+
+    /* CSS for the banner image */
+    .banner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 100%;
+      background-image: url('images/HeadBanner.png');
+      background-repeat: repeat;
+      background-position: center top;
+      animation: bannerScroll 20s linear infinite;
+    }
+
+    /* CSS for the banner text */
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #E8FF8D;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 1;
+  pointer-events: none;
+  text-align: center;
+}
+
+.smaller-text {
+  font-size: 18px;
+}
+    /* CSS for the image grid */
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+	  margin-top: 5%;
+	  margin-left: 20px;
+      margin-right: 20px;
+    }	
+
+    .image-grid-item {
+      width: calc(33.33% - 10px);
+      margin-bottom: 20px;
+	  box-sizing: border-box;
+    }
+@media (max-width: 768px) {
+  .image-grid-item {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .image-grid-item {
+    width: 100%;
+  }
+}
+    .image-grid-item a {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .image-grid-item img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .image-caption {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    @keyframes bannerScroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-30%);
+      }
+    }
+	  /* CSS for the navigation bar */
+.navbar {
+  background-color: #e6d9c1;
+  position: relative;
+  z-index: 1;
+}
+
+.hamburger-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.hamburger-icon img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #e6d9c1;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  z-index: 2;
+}
+
+.navbar-menu.open {
+  transform: translateX(0);
+}
+
+.navbar-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar-menu li {
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+
+
+  .donation-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 5%;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    .donation-option {
+      width: calc(33.33% - 50px);
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+	  text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .donation-option {
+        width: calc(50% - 10px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .donation-option {
+        width: 100%;
+      }
+    }
+
+    .donation-option .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .donation-option .caption {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .donation-option .cost {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .donation-option .donate-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #86C08B;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .donation-option .donate-button:hover {
+      background-color: #589662;
+    }
+
+.popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
+      display: none;
+    }

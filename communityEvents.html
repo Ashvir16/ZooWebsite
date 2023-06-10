@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link href="CE.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="banner-container">
+<div class="navbar">
+  <div class="hamburger-icon" onclick="toggleMenu()">
+    <img src="images/hamburger-icon.png" alt="Hamburger Icon">
+  </div>
+  <div class="navbar-menu" id="navbarMenu">
+    <ul>
+      <li><a href="index.html" onclick="toggleMenu()">Home Page</a></li>
+      <li><a href="zooDonations.html" onclick="toggleMenu()">Community Events</a></li>
+      <li><a href="virtualTours.html" onclick="toggleMenu()">Virtual Tours</a></li>
+	  <li><a href="zooDonations.html" onclick="toggleMenu()">Zoo Donations</a></li>
+    </ul>
+  </div>
+</div>
+    <div class="banner">
+		
+    </div>
+    <h1 class="banner-text">Community Events<br><span class="smaller-text">at</span><br>Possibly Animals Zoo</h1> 
+
+  </div>
+	
+	  <div class="section">
+    <div class="event-details">
+      <h2>Animal Encounter</h2>
+      <p>Get up close and personal with our friendly Blockosaurous! Learn interesting facts and interact with this fascinating creature.</p>
+    </div>
+    <button class="rsvp-button" onclick="showPopup()">RSVP</button>
+  </div>
+
+  <div class="section">
+    <div class="event-details">
+      <h2>Wildlife Safari</h2>
+      <p>Embark on an exciting adventure to spot the elusive Flagosaurous. Join our experienced guides and discover the wonders of wildlife in their natural habitat.</p>
+    </div>
+    <button class="rsvp-button" onclick="showPopup()">RSVP</button>
+  </div>
+
+  <div class="section">
+    <div class="event-details">
+      <h2>Jungle Trek</h2>
+      <p>Experience the thrill of exploring the rainforest alongside the majestic Elephantosaurous. Walk through lush greenery and learn about the diverse flora and fauna.</p>
+    </div>
+    <button class="rsvp-button" onclick="showPopup()">RSVP</button>
+  </div>
+
+  <div class="section">
+    <div class="event-details">
+      <h2>Adventure Dive</h2>
+      <p>Dive into the depths of the ocean with the Jellosaurous. Discover the mesmerizing underwater world and witness the vibrant marine life.</p>
+    </div>
+    <button class="rsvp-button" onclick="showPopup()">RSVP</button>
+  </div>
+
+  <div class="section">
+    <div class="event-details">
+      <h2>Spikysourous Discovery</h2>
+      <p>Join our experts to uncover the secrets of the fascinating Spikysourous. Learn about its unique features and witness its impressive survival adaptations.</p>
+    </div>
+    <button class="rsvp-button" onclick="showPopup()">RSVP</button>
+  </div>
+
+  <div class="section">
+    <div class="event-details">
+      <h2>Staryishasoursours Stargazing</h2>
+      <p>Experience an enchanting evening under the stars with the Staryishasoursours. Enjoy stargazing and hear captivating stories about the constellations.</p>
+    </div>
+    <button class="rsvp-button" onclick="showPopup()">RSVP</button>
+  </div>
+
+  <div id="popup" class="popup">
+    <p>Thank you, we hope to see you soon!</p>
+  </div>
+
+	<script>
+	function toggleMenu() {
+  var navbarMenu = document.getElementById("navbarMenu");
+  navbarMenu.classList.toggle("open");
+}
+		
+		 function showPopup() {
+      const popup = document.getElementById('popup');
+      popup.style.display = 'block';
+      setTimeout(function() {
+        popup.style.display = 'none';
+      }, 3000);
+    }
+</script>
+</body>
+</html>
