@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zoo Website</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+  <div class="banner-container">
+<div class="navbar">
+  <div class="hamburger-icon" onclick="toggleMenu()">
+    <img src="images/hamburger-icon.png" alt="Hamburger Icon">
+  </div>
+  <div class="navbar-menu" id="navbarMenu">
+    <ul>
+      <li><a href="virtualTours.html" onclick="toggleMenu()">Menu Item 1</a></li>
+      <li><a href="#" onclick="toggleMenu()">Menu Item 2</a></li>
+      <li><a href="#" onclick="toggleMenu()">Menu Item 3</a></li>
+    </ul>
+  </div>
+</div>
+    <div class="banner">
+		
+    </div>
+<h1 class="banner-text">Possibly Animals</h1>
+
+  </div>
+
+  <div class="image-grid">
+    <div class="image-grid-item">
+      <a href="#">
+        <img src="images/CommunityEventsIcon.png" alt="Image 1">
+        <div class="image-caption">See our upcoming community events and interact with our animals!</div>
+      </a>
+    </div>
+    <div class="image-grid-item">
+      <a href="virtualTours.html">
+        <img src="images/virtualToursIcon.png" alt="Image 2">
+        <div class="image-caption">Can't make it in person? Look at our virutal tours instead!</div>
+      </a>
+    </div>
+    <div class="image-grid-item">
+      <a href="#">
+        <img src="images/ZooDonationsIcon.png" alt="Image 3">
+        <div class="image-caption">Zoos are expensive to run. Donate if you'd like to help support us!</div>
+      </a>
+    </div>
+  </div>
+	
+	
+<section class="schedule">
+  <h2>Zoo Schedule</h2>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Opening Time</th>
+          <th>Closing Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>9:00 AM</td>
+          <td>5:00 PM</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>9:00 AM</td>
+          <td>5:00 PM</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>9:00 AM</td>
+          <td>5:00 PM</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>9:00 AM</td>
+          <td>5:00 PM</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>9:00 AM</td>
+          <td>9:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+	<script>
+function toggleMenu() {
+  var navbarMenu = document.getElementById("navbarMenu");
+  navbarMenu.classList.toggle("open");
+}
+
+	</script>
+</body>
+</html>
